@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Dhruv Savaliya - Biodata</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://lh3.googleusercontent.com/pw/AP1GczPpv6D0K9uIg3JdzkAPXEF51SESqhrRSirpf0EVqgEUFEvWfFjnh8rn0aBEbJC0wzVubefi9npz5O6znpBmCtoQPS7RmUzZr0dJyI2X1xRST6H1EG5QHdoGbOQUzaa1KI9yvW-G9iXi8QiaMIF8A5ftBw=w651-h869-s-no-gm?authuser=0">
+
+    <!-- Animate.css + WOW.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* --- Google Fonts Import --- */
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        /* --- Root Color System --- */
+        :root {
+
+            --bg-primary: #111111;
+
+            --card-bg: #1B1B1B;
+
+            --card-border: #4D3B1B;
+
+            --card-shadow: rgba(0, 0, 0, .55);
+
+            --hero-bg: #191919;
+
+            --hero-frame-bg: #252525;
+
+            --hero-frame-border: #D4AF37;
+
+            --text-primary: #FFFFFF;
+
+            --text-secondary: #D6B978;
+
+            --text-muted: #AFA38A;
+
+            --text-label: #F2E6C8;
+
+            --border-color: #40331B;
+
+            --chip-bg: #2A2215;
+
+            --chip-text: #F5D77B;
+
+            --photo-card-bg: #202020;
+
+            --photo-card-shadow: rgba(0, 0, 0, .5);
+
+            --lightbox-bg: rgba(0, 0, 0, .96);
+
+            --btn-bg: #2B2B2B;
+
+            --btn-hover-bg: #353535;
+
+            --slider-bg-inactive: #282828;
+
+            --slider-bg-active: #D4AF37;
+
+            --slider-ball-bg: #FFFFFF;
+
+            --slider-ball-shadow: #D4AF37;
+
+        }
+
+        /* --- Language Groups --- */
+        .lang-en {
+            font-family: "Outfit", sans-serif;
+        }
+
+        .lang-gu {
+            font-family: "Anek Gujarati", system-ui, -apple-system, "Noto Sans Gujarati", sans-serif;
+            font-weight: 500;
+        }
+
+        /* Language Visibility Rules */
+        .lang-gu {
+            display: none;
+        }
+
+        [data-lang="gu"] .lang-en {
+            display: none;
+            font-size: 16px;
+        }
+
+        [data-lang="gu"] .lang-gu {
+            display: inline;
+            word-spacing: 0%;
+            font-size: 16px;
+        }
+
+        /* --- Base Reset --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 12px;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 430px;
+            /* Fixed mobile width even on desktop */
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 26px;
+            box-shadow: 0 18px 45px var(--card-shadow);
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+        }
+
+        /* --- Hero / Main Photo --- */
+        .hero {
+            padding: 18px 18px 0;
+            background: var(--hero-bg);
+            border-top-left-radius: 26px;
+            border-top-right-radius: 26px;
+        }
+
+        .hero-frame {
+            background: var(--hero-frame-bg);
+            border-radius: 22px;
+            border: 2px solid var(--hero-frame-border);
+            overflow: hidden;
+        }
+
+        .hero-frame img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 16px 18px 18px;
+        }
+
+        .eyebrow {
+            font-size: 0.78rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .name {
+            font-size: 1.35rem;
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-primary);
+        }
+
+        .role {
+            font-size: 0.86rem;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+
+        .section {
+            margin-top: 18px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .label {
+            font-weight: 500;
+            color: var(--text-label);
+        }
+
+        .value {
+            text-align: right;
+            color: var(--text-primary);
+        }
+
+        .para {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        .subtext {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .address {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: var(--chip-bg);
+            font-size: 0.78rem;
+            color: var(--chip-text);
+            margin-top: 4px;
+        }
+
+        .chip span {
+            font-weight: 600;
+            margin-right: 4px;
+            text-transform: uppercase;
+            font-size: 0.72rem;
+        }
+
+        /* --- More Photos Gallery --- */
+        .photo-grid {
+            display: flex;
+            gap: 10px;
+        }
+
+        .photo-card {
+            flex: 1;
+            background: var(--photo-card-bg);
+            border-radius: 20px;
+            box-shadow: 0 12px 25px var(--photo-card-shadow);
+            padding: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .photo-card img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px var(--card-shadow);
+        }
+
+        /* --- Fullscreen Lightbox --- */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: var(--lightbox-bg);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .lightbox img {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 16px;
+            object-fit: contain;
+            animation: zoomIn 0.25s ease;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 40px;
+            color: var(--slider-ball-bg);
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        #lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            transition: transform 0.2s ease;
+            touch-action: none;
+            /* Important for pinch zoom */
+        }
+
+        .lightbox-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+        }
+
+        .zoom-btn,
+        .download-btn {
+            background: var(--btn-bg);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .zoom-btn:hover,
+        .download-btn:hover {
+            background: var(--btn-hover-bg);
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 14px 14px 16px;
+            }
+        }
+
+        /* --- Language Switch --- */
+        .lang-switch-container {
+            display: flex;
+            justify-content: flex-end;
+            /* Right side */
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .switch {
+            font-size: 0.875rem;
+            position: relative;
+            display: inline-block;
+            width: 9em;
+            height: 2.6em;
+        }
+
+        .switch input {
+            display: none;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .switch input:checked+.slider .ball {
+            box-shadow: 10px 10px 100px var(--slider-ball-shadow);
+        }
+
+        .switch input:checked+.slider .title {
+            left: 40%;
+        }
+
+        .switch input:checked+.slider {
+            background-color: var(--slider-bg-active);
+        }
+
+        .switch input:focus+.slider {
+            box-shadow: 10px 10px 100px var(--slider-ball-shadow);
+        }
+
+        .switch input:checked+.slider .ball {
+            left: 72%;
+            transform: rotate(360deg);
+            box-shadow: none;
+            outline: 6px solid rgba(255, 255, 255, 0.278);
+        }
+
+        .switch .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--slider-bg-inactive);
+            transition: all 0.4s;
+            border-radius: 30px;
+            color: var(--slider-ball-bg);
+        }
+
+        .switch .slider .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 600;
+            transition: all 0.4s;
+            user-select: none;
+        }
+
+        .switch .slider .ball {
+            background-color: var(--slider-ball-bg);
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            position: absolute;
+            left: -1px;
+            transition: 0.4s;
+        }
+
+        .switch .slider .ball .icon {
+            position: absolute;
+            top: 58%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            color: var(--slider-bg-inactive);
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main class="card">
+
+            <!-- MAIN PHOTO -->
+            <section class="hero wow animate__animated animate__fadeInDown">
+                <div class="hero-frame">
+                    <!-- main image -->
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOjpB82jbGm9hOL2_RYOmWwgq0xIQP4BFkrK_Z0jzp1ToDa_mVovXbprn-phW9a7j8GS4DV4IoI730MxlD8cqY8zqnj_vijHwWt3AC7cApeDeooigoaBugyz0OQSrLRnL6kmmVC7kUe1wVSTxWhzG5E3Q=w651-h869-s-no-gm?authuser=0"
+                        alt="Dhruv Savaliya">
+                </div>
+            </section>
+
+            <section class="content">
+
+                <!-- LANGUAGE SWITCH -->
+                <div class="lang-switch-container">
+                    <label class="switch">
+                        <input type="checkbox" id="langToggle" onchange="toggleLanguage(this)">
+                        <span class="slider">
+                            <span class="title" id="langTitle">English</span>
+                            <span class="ball">
+                                <span class="icon">અ</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- NAME / ROLE -->
+                <header class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="eyebrow">
+                        <span class="lang lang-en">Biodata</span>
+                        <span class="lang lang-gu">બાયોડેટા</span>
+                    </div>
+
+                    <div class="name">
+                        <span class="lang lang-en">Dhruv Savaliya</span>
+                        <span class="lang lang-gu" style="font-size: 20px; font-weight: 600;">ધ્રુવ સવાલિયા</span>
+                    </div>
+
+                    <div class="role">
+                        <span class="lang lang-en">Data Analyst & Supply Chain Manager, DDPL - Mumbai</span>
+                        <span class="lang lang-gu">ડેટા એનાલિસ્ટ & સપ્લાય ચેઇન મેનેજર, ડીડીપીએલ - મુંબઈ</span>
+                    </div>
+                </header>
+
+                <!-- PERSONAL DETAILS -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Personal Details</span>
+                        <span class="lang lang-gu">વ્યક્તિગત વિગતો</span>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Date of Birth</span>
+                            <span class="lang lang-gu">જન્મ તારીખ</span>
+                        </div>
+                        <div class="lang lang-en">15-09-2002</div>
+                        <div class="lang lang-gu">૧૫-૦૯-૨૦૦૨</div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Height &amp; Weight</span>
+                            <span class="lang lang-gu">ઊંચાઈ &amp; વજન</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">6 ft, 68 kg</span>
+                            <span class="lang lang-gu">૬ ફૂટ, ૬૮ કિલો</span>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Mobile</span>
+                            <span class="lang lang-gu">મોબાઇલ</span>
+                        </div>
+                        <a href="tel:+919825845113" style="text-decoration: none; color: #313033;">
+                            <div class="lang lang-en">98258 45113</div>
+                            <div class="lang lang-gu">૯૮૨૫૮ ૪૫૧૧૩</div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Education</span>
+                        <span class="lang lang-gu">શિક્ષણ</span>
+                    </div>
+
+                    <p class="para">
+                        <span class="label">
+                            <span class="lang lang-en">Highest Qualification:</span>
+                            <span class="lang lang-gu">ઉચ્ચતમ લાયકાત:</span>
+                        </span>
+                        <span class="value">
+                            <span class="lang lang-en">Bachelor of Engineering (B.E.) in (Information Technology
+                                (I.T.))</span>
+                            <span class="lang lang-gu">બેચલર ઓફ એન્જિનિયરિંગ (બી.ઈ.) ઇન (ઇન્ફોર્મેશન ટેકનોલોજી
+                                (આઇ.ટી.))</span>
+                        </span>
+                    </p>
+                </section>
+
+                <!-- FAMILY -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Family Details</span>
+                        <span class="lang lang-gu">કુટુંબની વિગતો</span>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Father:</span>
+                            <span class="lang lang-gu">પિતાનું નામ:</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Sanjaybhai Arjanbhai Savaliya</span>
+                            <span class="lang lang-gu">સંજયભાઈ અરજણભાઈ સાવલિયા</span>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Mobile:</span>
+                            <span class="lang lang-gu">મોબાઇલ:</span>
+                        </div>
+                        <a href="tel:+919998843467" style="text-decoration: none; color: #313033;">
+                            <div class="lang lang-en">99988 43467</div>
+                            <div class="lang lang-gu">૯૯૯૮૮ ૪૩૪૬૭</div>
+                        </a>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Profession:</span>
+                            <span class="lang lang-gu">વ્યવસાય:</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Construction</span>
+                            <span class="lang lang-gu">બાંધકામ</span>
+                        </div>
+                    </div>
+
+                    <div class="info-row" style="margin-top:6px;">
+                        <div class="label">
+                            <span class="lang lang-en">Mother:</span>
+                            <span class="lang lang-gu">માતાનું નામ:</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en"> Daxaben Sanjaybhai Savaliya</span>
+                            <span class="lang lang-gu">દક્ષાબેન સંજયભાઈ સાવલિયા</span>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Young Sister:</span>
+                            <span class="lang lang-gu">નાની બહેન:</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Eshika Sanjaybhai Savaliya (B.Com Completed)</span>
+                            <span class="lang lang-gu">ઈશિકા સંજયભાઈ સાવલિયા (B.Com Completed)</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Young Brother:</span>
+                            <span class="lang lang-gu">નાનો ભાઈ:</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en"> Meet Sanjaybhai Savaliya (B.Com Pursuing)</span>
+                            <span class="lang lang-gu">મીત સંજયભાઈ સાવલિયા (B.Com Completed)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- NATIVE PLACE -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Native Place</span>
+                        <span class="lang lang-gu">મૂળ ગામ</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/VHftHB8N6Re3BxA67" target="_blank" style="text-decoration: none;">
+                        <p class="para">
+                            <span class="lang lang-en">Gigasan, Ta: Dhari, Dist: Amreli</span>
+                            <span class="lang lang-gu">ગીગાસણ, તા: ધારી, જિ: અમરેલી</span>
+                        </p>
+                    </a>
+                </section>
+
+                <!-- MATERNAL -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Maternal Relatives</span>
+                        <span class="lang lang-gu">મોસાળ પક્ષ</span>
+                    </div>
+
+                    <p class="para">
+                        <span class="value">
+                            <span class="lang lang-en">
+                                Navneetbhai Balubhai Sojitra
+                            </span>
+                            <span class="lang lang-gu">
+                                નવનીતભાઈ બાલુભાઈ સોજિત્રા
+                            </span>
+                        </span>
+                    </p>
+
+                    <a href="https://maps.app.goo.gl/SH8C1KDb9uuNhtS29?g_st=aw" target="_blank"
+                        style="text-decoration: none;">
+                        <p class="subtext">
+                            <span class="lang lang-en">place: Nana Samadhiyala, Ta: Dhari, Dist: Amreli</span>
+                            <span class="lang lang-gu">ગામ: નાના સમઢીયાળા, તા: ધારી, જિ: અમરેલી</span>
+                        </p>
+                    </a>
+                </section>
+
+                <!-- ADDRESSES -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Addresses</span>
+                        <span class="lang lang-gu">સરનામું</span>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/wWWBZq3GBwZUSLmF8" target="_blank" style="text-decoration: none;">
+                        <p class="address">
+                            <span class="label">
+                                <span class="lang lang-en">Permanent:</span>
+                                <span class="lang lang-gu">કાયમી સરનામું:</span>
+                            </span><br>
+                            <span class="lang lang-en">
+                                41, Bhagyoday Society, <br>
+                                Nr. Canal, Thakkarbapanagar, <br>
+                                Ahmedabad - 382350
+                            </span>
+                            <span class="lang lang-gu">
+                                41, ભાગ્યોદય સોસાયટી, <br>
+                                કેનાલ રોડ પાસે, ઠક્કરબાપાનગર, <br>
+                                અમદાવાદ - 382350
+                            </span>
+                        </p>
+                    </a>
+                </section>
+
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+                    <a href="https://maps.app.goo.gl/1goNFxuMTTuiBPdi6" target="_blank"
+                        style="font-size:20px; text-decoration: none;">
+                        <p class="address">
+                            <span class="label">
+                                <span class="lang lang-en">Office Location:</span>
+                                <span class="lang lang-gu">ઓફિસ સરનામું:</span>
+                            </span><br>
+                            <span class="lang lang-en">
+                                F Tower, Bharat Diamond Bourse, 7081-82, G Block BKC, <br> Bandra
+                                Bandra East, Mumbai, 400051
+                            </span>
+                            <span class="lang lang-gu">
+                                F - ટાવર, ભારત ડાયમંડ બોર્સ, ૭૦૮૧-૮૨, જી બ્લોક બીકેસી, <br> બાંદ્રા
+                                બાંદ્રા પૂર્વ, મુંબઈ, ૪૦૦૦૫૧
+                            </span>
+                        </p>
+                    </a>
+                </section>
+
+                <!-- MORE PHOTOS (CARDS + FULLSCREEN) -->
+                <!-- FULLSCREEN LIGHTBOX -->
+
+                <!-- MORE PHOTOS (CARDS + FULLSCREEN) -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                    <div class="section-title lang lang-en">More Photos</div>
+                    <div class="section-title lang lang-gu ">ફોટો</div>
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPuOouwNBXLkZiWc5AzUp4KbnDRvY3Q97MFmDggP-njYTI58N0sRT1RxB1PKO-dhHK81HYfoqw5CRQ_SYlZBAh_2OR3NgHZUQwzv7TNmldLM-TH041clCnkfXlSg6_6JLlLe_qrY523h1wItkJ2HkzD5Q=w651-h869-s-no-gm?authuser=0"
+                                alt="Dhruv photo 1" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="photo-card">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNlVjrHQC0lPr-YTgghB493PlB1sTYuMGaELRZf9A4x_QaqCimFJ-6tvQAqrjrDUdlGDXgwZJoAHUfmu5P4rqsxv5ehdKAosbkHuhHJEZR7GNYgQIj9YdcdvVEKF3qstOOykTN7Nia1ew2zZwdG7jB7CQ=w651-h869-s-no-gm?authuser=0"
+                                alt="Dhruv photo 2" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="photo-card">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczN5puroDSXfDtx4oXw65CpjUp43NOoKc0mXX0afufqomZKHTl-kNFaJ-TTcbYAfqrzip6ixqX6CG3m04lReQ9k2ChTX5LOXjE_UULM0QLPEs9_4xTwg43caR_67AQN8QnlSNVVor07uSF0ztLzktDD6Ew=w656-h869-s-no-gm?authuser=0"
+                                alt="Dhruv photo 3" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </section>
+        </main>
+    </div>
+
+    <!-- FULLSCREEN LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Full view">
+    </div>
+
+
+    <!-- FULLSCREEN LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Full view">
+    </div>
+
+    <script>
+        new WOW().init();
+
+        // LANGUAGE TOGGLE
+        function toggleLanguage(checkbox) {
+            const isGujarati = checkbox.checked;
+            document.documentElement.setAttribute('data-lang', isGujarati ? 'gu' : 'en');
+            const title = document.getElementById('langTitle');
+            title.textContent = isGujarati ? 'ગુજરાતી' : 'English';
+        }
+
+    </script>
+
+    <script>
+        /* ADVANCED LIGHTBOX: Pinch Zoom + Mouse Zoom + Drag/Pan */
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        let scale = 1, lastScale = 1, startDistance = 0;
+        let posX = 0, posY = 0, lastPosX = 0, lastPosY = 0;
+        let isDragging = false;
+
+        function openLightbox(src) {
+            scale = 1;
+            lastScale = 1;
+            posX = posY = lastPosX = lastPosY = 0;
+
+            lightboxImg.src = src;
+            updateTransform();
+            lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = "none";
+        }
+
+        function updateTransform() {
+            lightboxImg.style.transform =
+                `translate(${posX}px, ${posY}px) scale(${scale})`;
+        }
+
+        /* ----- TOUCH EVENTS (MOBILE) ----- */
+        lightboxImg.addEventListener("touchstart", function (e) {
+            if (e.touches.length === 2) {
+                e.preventDefault();
+                startDistance = getDistance(e.touches[0], e.touches[1]);
+                lastScale = scale;
+            } else if (e.touches.length === 1 && scale > 1) {
+                isDragging = true;
+                lastPosX = e.touches[0].clientX - posX;
+                lastPosY = e.touches[0].clientY - posY;
+            }
+        }, { passive: false });
+
+        lightboxImg.addEventListener("touchmove", function (e) {
+            if (e.touches.length === 2 && startDistance > 0) {
+                e.preventDefault();
+                const newDistance = getDistance(e.touches[0], e.touches[1]);
+                scale = clamp((newDistance / startDistance) * lastScale, 1, 4);
+                updateTransform();
+            } else if (e.touches.length === 1 && isDragging && scale > 1) {
+                posX = e.touches[0].clientX - lastPosX;
+                posY = e.touches[0].clientY - lastPosY;
+                updateTransform();
+            }
+        }, { passive: false });
+
+        lightboxImg.addEventListener("touchend", () => {
+            isDragging = false;
+            startDistance = 0;
+        });
+
+        /* ----- MOUSE EVENTS (DESKTOP) ----- */
+        lightboxImg.addEventListener("mousedown", function (e) {
+            if (scale > 1) {
+                isDragging = true;
+                lastPosX = e.clientX - posX;
+                lastPosY = e.clientY - posY;
+            }
+        });
+
+        window.addEventListener("mousemove", function (e) {
+            if (isDragging) {
+                posX = e.clientX - lastPosX;
+                posY = e.clientY - lastPosY;
+                updateTransform();
+            }
+        });
+
+        window.addEventListener("mouseup", function () {
+            isDragging = false;
+        });
+
+        /* Mouse wheel zoom */
+        lightboxImg.addEventListener("wheel", function (e) {
+            e.preventDefault();
+            const delta = e.deltaY > 0 ? -0.15 : 0.15;
+            scale = clamp(scale + delta, 1, 4);
+            updateTransform();
+        });
+
+        /* Helpers */
+        function getDistance(t1, t2) {
+            return Math.sqrt(
+                Math.pow(t1.clientX - t2.clientX, 2) +
+                Math.pow(t1.clientY - t2.clientY, 2)
+            );
+        }
+
+        function clamp(value, min, max) {
+            return Math.max(min, Math.min(max, value));
+        }
+    </script>
+
+
+</body>
+
+</html>
